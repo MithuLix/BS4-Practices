@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>filters</title>
+    <style>
+        body {
+            margin: 1rem; padding: 1rem;
+        }
+        .a{padding: 1rem; background-color: rgb(224, 224, 224);}    
+        
+        h1 {text-align: center; padding: .4rem; background-color: rgb(138, 138, 138); }
+
+        h2 {text-align: center; padding: .4rem; background-color: rgb(167, 167, 167);}
+    </style>
+</head>
+<body>
+    <div class="a">
+        <h2>filters</h2>
+        <p>Bootstrap does not have a component that allows filtering. However, we can use jQuery to filter / search for elements.</p>
+        <hr>
+        <input type="text" class="form-control " id="input" placeholder="search..">
+
+        <br><br>
+        <table class="table table-bordered table-dark">
+            <thead class="bg-success">
+                <tr>
+                    <th>Name</th>
+                    <th>Gf./Bf.</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                <tr>
+                    <td>Mithu</td>
+                    <td>----</td>
+                    <td>mithu@gmail.com</td>
+                    <td>01234567890</td>
+                    <td>Halhalia</td>
+                </tr>
+                <tr>
+                    <td>Moin</td>
+                    <td>Yeamin</td>
+                    <td>moin@gmail.com</td>
+                    <td>01234567890</td>
+                    <td>Jorabari</td>
+                </tr>
+                <tr>
+                    <td>Kowser</td>
+                    <td>Hosne ara</td>
+                    <td>kowser@gmauil.com</td>
+                    <td>01234567890</td>
+                    <td>Halhalia</td>
+                </tr>
+                <tr>
+                    <td>Arman</td>
+                    <td>Mitu</td>
+                    <td>arman@gmail.com</td>
+                    <td>01234567890</td>
+                    <td>Jorabari</td>
+                </tr>
+                <tr>
+                    <td>Alif</td>
+                    <td>Ela</td>
+                    <td>alif@gmail.com</td>
+                    <td>01234567890</td>
+                    <td>Halhalia</td>
+                </tr>
+                <tr>
+                    <td>Helal</td>
+                    <td>12-vatari</td>
+                    <td>helal@gmail.com</td>
+                    <td>01234567890</td>
+                    <td>Jorabari</td>
+                </tr>
+                <tr>
+                    <td>Mamun</td>
+                    <td>Arju</td>
+                    <td>mamun@gmail.com</td>
+                    <td>01234567890</td>
+                    <td>Halhalia</td>
+                </tr>
+                <tr>
+                    <td>khokon</td>
+                    <td>12-vatari</td>
+                    <td>khokon@gmail.com</td>
+                    <td>01234567890</td>
+                    <td>Jorabari</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+         $("#input").on("keyup", function() {
+           var value = $(this).val().toLowerCase();
+           $("#table tr").filter(function() {
+             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+           });
+         });
+        });
+    </script>
+</body>

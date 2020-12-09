@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>grid</title>
+    <style>
+        body {
+            margin: .1rem; padding: .5rem;
+        }
+        .a{ background-color: rgb(240, 240, 240);}    
+        
+        h1 {text-align: center; padding: .4rem; background-color: rgb(138, 138, 138); }
+
+        h2 {text-align: center; padding: .4rem; background-color: rgb(167, 167, 167);}
+    </style>
+</head>
+<body>
+    <div class="a">
+        <h2>Bootstrap 4 Grid System</h2>
+        <p>Bootstrap's grid system allows up to 12 columns across the page.</p>
+        <p>Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a small screen it would be better if the content items were stacked on top of each other.</p>
+        <h2>Grid Classes</h2>
+        <p>The Bootstrap 4 grid system has five classes:</p>
+        <ul>
+           <li><code class="w3-codespan">.col-</code> (extra small devices - screen width less than 576px)</li>
+           <li><code class="w3-codespan">.col-sm-</code> (small devices - screen width equal to or greater than 576px)</li>
+           <li><code class="w3-codespan">.col-md-</code> (medium devices - screen width equal to or greater than 768px)</li>
+           <li><code class="w3-codespan">.col-lg-</code> (large devices - screen width equal to or greater than 992px)</li>
+           <li><code class="w3-codespan">.col-xl-</code> (xlarge devices - screen width equal to or greater than 1200px)</li>
+         </ul>
+         <p>The classes above can be combined to create more dynamic and flexible layouts.</p>
+         <p><strong>Tip:</strong> Each class scales up, so if you wish to set the same widths for 
+            <code class="w3-codespan">sm</code> and <code class="w3-codespan">md</code>, you only need to specify <code class="w3-codespan">sm</code>.</p>
+         <hr>
+         <h2>Grid System Rules</h2>
+         <p>Some Bootstrap 4 grid system rules:</p>
+         <ul>
+            <li>Rows must be placed within a <code class="w3-codespan">.container</code> (fixed-width) or <code class="w3-codespan">.container-fluid</code> (full-width) for proper alignment and padding</li>
+            <li>Use rows to create horizontal groups of columns</li>
+            <li>Content should be placed within columns, and only columns may be immediate children of rows</li>
+            <li>Predefined classes like <code class="w3-codespan">.row </code>and <code class="w3-codespan">.col-sm-4</code> are available for quickly making grid layouts</li>
+            <li>Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on <code class="w3-codespan">.rows</code></li>
+            <li>Grid columns are created by specifying the number of 12 available columns you wish to span. For example, three equal columns would use three <code class="w3-codespan">.col-sm-4</code></li>
+            <li>Column widths are in percentage, so they are always fluid and sized relative to their parent element</li>
+            <li>The biggest <strong>difference between Bootstrap 3 and Bootstrap 4</strong> is that Bootstrap 4 now uses flexbox, instead of floats. One big advantage with flexbox is that grid columns without a specified width will automatically layout as "equal width columns" (and equal height). Example: Three elements with <code class="w3-codespan">.col-sm</code> will each automatically be 33.33% wide from the small breakpoint and up. <strong>Tip:</strong> If you want to learn more about Flexbox, you can read our <a href="/css/css3_flexbox.asp">CSS Flexbox Tutorial</a>.</li>
+        </ul>
+        <hr>
+
+        <h2>simple grid</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6" style="background-color:red;">50%</div>
+                <div class="col-sm-6" style="background-color:green;">50%</div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-2" style="background-color:green;">25%</div>
+                <div class="col-sm-10" style="background-color:red;">75%</div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4" style="background-color:orange;">35%</div>
+                <div class="col-sm-8" style="background-color:red;">65%</div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4" style="background-color:green;">33.3%</div>
+                <div class="col-sm-4" style="background-color:orange;">33.3%</div>
+                <div class="col-sm-4" style="background-color:green;">33.3%</div>
+            </div>
+            <br>
+            <h3>Auto Layout Columns</h3>
+            <p>In Bootstrap 4, there is an easy way to create equal width columns for all devices: just remove the number from .col-size-* and only use the .col-size class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width. The size classes determines when the columns should be responsive:</p>
+            <div class="row">
+                <div class="col-sm bg-success">1 of 6</div>
+                <div class="col-sm bg-warning">2 of 6</div>
+                <div class="col-sm bg-success">3 of 6</div>
+                <div class="col-sm bg-warning">4 of 6</div>
+                <div class="col-sm bg-success">5 of 6</div>
+                <div class="col-sm bg-warning">6 of 6</div>
+            </div> 
+            <br>
+            <h3>Nested columns</h3>
+            <p>The following example shows how to create a two column layout, with another two columns inside one of the columns:</p>
+            <div class="row">
+                <div class="col-8 bg-warning">.col-8
+                    <div class="row">
+                        <div class="col-6 bg-success">.col-6</div>
+                        <div class="col-6 bg-primary">.col-6</div>
+                    </div>
+                </div>
+            <div class="col-4 bg-info">.col-4</div>
+        </div>
+    </div>
+</body>

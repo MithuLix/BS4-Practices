@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>flex</title>
+    <style>
+        body {
+            margin: 1rem; padding: 1rem;
+        }
+        .a{padding: 1rem; background-color: rgb(224, 224, 224);}    
+        
+        h1 {text-align: center; padding: .4rem; background-color: rgb(138, 138, 138); }
+
+        h2 {text-align: center; padding: .4rem; background-color: rgb(167, 167, 167);}
+    </style>
+</head>
+<body>
+    <div class="a">
+        <h2>Bootstrap 4 flex</h2>
+        <p>Use flex classes to control the layout of Bootstrap 4 components.</p>
+        <p>To create a flexbox container and to transform direct children into flex items, use the d-flex class:</p>
+
+        <h2>Example-1</h2>
+        <div class="d-inline-flex p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">flex-item-1</div>
+            <div class="p-2 bg-warning">flex-item-2</div>
+            <div class="p-2 bg-primary">flex-item-3</div>
+        </div>
+        <hr>
+
+        <div class="d-flex flex-row-reverse p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">flex-item-1</div>
+            <div class="p-2 bg-warning">flex-item-2</div>
+            <div class="p-2 bg-primary">flex-item-3</div>
+        </div>
+        <hr>
+
+        <div class="d-flex flex-column p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">flex-item-1</div>
+            <div class="p-2 bg-warning">flex-item-2</div>
+            <div class="p-2 bg-primary">flex-item-3</div>
+        </div>
+        <hr>
+
+        <h2>Justify Content</h2>
+        <p>Use the .justify-content-* classes to change the alignment of flex items. Valid classes are start (default), end, center, between or around:</p>
+
+        <div class="d-flex justify-content-start bg-secondary text-white">
+            <div class="p-2 bg-primary">flex-item-1</div>
+            <div class="p-2 bg-success">content-start</div>
+            <div class="p-2 bg-primary">flex-item-3</div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center bg-secondary text-white">
+            <div class="p-2 bg-primary">flex-item-1</div>
+            <div class="p-2 bg-success">content-center</div>
+            <div class="p-2 bg-primary">flex-item-3</div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-between bg-secondary text-white">
+            <div class="p-2 bg-primary">flex-item-1</div>
+            <div class="p-2 bg-success">content-between</div>
+            <div class="p-2 bg-primary">flex-item-3</div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-around bg-secondary text-white">
+            <div class="p-2 bg-primary">flex-item-1</div>
+            <div class="p-2 bg-success">content-around</div>
+            <div class="p-2 bg-primary">flex-item-3</div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-end bg-secondary text-white">
+            <div class="p-2 bg-primary">flex-item-1</div>
+            <div class="p-2 bg-success">content-end</div>
+            <div class="p-2 bg-primary">flex-item-3</div>
+        </div>
+        <br>
+        <div class="d-flex  bg-secondary text-white">
+            <div class="p-2 bg-primary flex-fill">flex-item-1</div>
+            <div class="p-2 bg-success flex-fill">flex-fill</div>
+            <div class="p-2 bg-primary flex-fill">flex-item-3</div>
+        </div>
+        <br>
+        <div class="d-flex  bg-secondary text-white">
+            <div class="p-2 bg-primary flex-fill">flex-item-1</div>
+            <div class="p-2 bg-success flex-fill">flex-item-2</div>
+            <div class="p-2 bg-primary flex-grow-1">flex-grow-1</div>
+        </div>
+        <br>
+        <div class="d-flex  bg-secondary text-white">
+            <div class="p-2 bg-primary flex-fill">flex-item-1</div>
+            <div class="p-2 bg-success flex-fill">flex-item-2</div>
+            <div class="p-2 bg-primary flex-shrink-1">flex-shrink-1</div>
+        </div>
+        <br>
+        <div class="d-flex bg-secondary text-white">
+            <div class="p-2 mr-auto bg-primary">margin-right</div>
+            <div class="p-2 bg-success">flex-item-2</div>
+            <div class="p-2 bg-primary">flex-item-3</div>
+        </div>
+        <br>
+        <div class="d-flex bg-secondary text-white">
+            <div class="p-2  bg-primary">flex-item-2</div>
+            <div class="p-2 bg-success">flex-item-2</div>
+            <div class="p-2 ml-auto bg-primary">margin-left</div>
+        </div>
+
+
+
+    </div>
+
+
+</body>

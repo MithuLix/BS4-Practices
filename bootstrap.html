@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>dropdown</title>
+    <style>
+        body {
+            margin: 1rem; padding: 1rem;
+        }
+        .a{padding: 1rem; background-color: rgb(224, 224, 224);}    
+        
+        h1 {text-align: center; padding: .4rem; background-color: rgb(138, 138, 138); }
+
+        h2 {text-align: center; padding: .4rem; background-color: rgb(167, 167, 167);}
+    </style>
+</head>
+<body>
+        <h1>Bootstrap-4 learning</h1><br>
+        <div class="a">
+            <h2>BS4 buttons</h2>
+            <button  class="btn btn-primary">Primary</button>
+            <button  class="btn btn-secondary">Secondary</button>
+            <button  class="btn btn-success">Success</button>
+            <button  class="btn btn-danger">Danger</button>
+            <button  class="btn btn-warning">Warning</button>
+            <button  class="btn btn-info  btn-xl">Info</button>
+            <button  class="btn btn-light">Light</button>
+            <button  class="btn btn-dark">Dark</button>
+            <button  class="btn btn-link btn-sm">Link</button>
+        </div>
+        <hr>
+
+        <div class="a">
+            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div><br>
+            <div class="d-inline p-2 bg-primary text-white">d-inline</div>
+            <div class="d-inline p-2 bg-dark text-white">d-inline</div><br><br>    
+        </div>
+        <hr>
+
+        <div class="a">
+          <h2>Container sizes</h2>
+            <div class="container-sm border">.container-sm</div>
+            <div class="container-md mt-3 border">.container-md</div>
+            <div class="container-lg mt-3 border">.container-lg</div>
+            <div class="container-xl mt-3 border">.container extra large</div>
+        </div>
+        <hr>
+
+        <div class="a">
+            <h2>three equal widyh column</h2>
+            <div class="row">
+                <div class="col" style="background-color: rgb(145, 145, 145);">.col-1</div>
+                <div class="col" style="background-color: rgb(255, 0, 0);">.col-2</div>
+                <div class="col" style="background-color: rgb(177, 177, 177);">.col-3</div>
+            </div>
+        </div>
+        <hr>
+
+
+        <div class="a">
+            <div class="jumbotron jumbotron-fluid" style="height: 200px;">
+                <div class="container-sm">
+                  <h2>Fluid jumbotron</h2>
+                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+
+        <div class="a">
+            <div class="alert alert-warning">
+                <p>Lorem ipsum dolor sit amet.strong. <strong><a href="" class="alert-link">Lorem</a> .</strong></p>
+            </div>
+            <div class="alert alert-info">
+                <strong>Secondary!</strong> Indicates a slightly less important action.
+            </div><hr>
+        </div><hr>
+
+
+        <div class="a">
+            <h2>closing alert</h2>
+            <div class="alert alert-primary alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Primary!</strong> Indicates an important action.
+            </div>
+        </div>
+        <hr>
+
+
+        <div class="a">
+             <h2>Button States</h2>
+             <button type="button" class="btn btn-primary">Primary Button</button>
+             <button type="button" class="btn btn-primary active">Active Primary</button>
+             <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+             <a href="#" class="btn btn-primary btn-danger">Disabled Link</a>
+        </div>
+        <hr>
+
+
+        <div class="a">
+            <h2>Colored Spinners</h2>
+            <p>Use any <strong>text color utilites</strong> to add a color to the spinner:</p>
+            <div class="spinner-border spinner-border-sm text-muted"></div>
+            <div class="spinner-border text-primary"></div>
+            <div class="spinner-border text-success"></div>
+            <div class="spinner-border text-secondary"></div>
+            <div class="spinner-border text-warning"></div>
+            <div class="spinner-border text-light"></div>
+            <div class="spinner-border text-dark"></div>
+            <div class="spinner-border text-info"></div>
+            <div class="spinner-border text-danger"></div>
+        </div>
+        <hr>
+
+
+
+        <div class="a">
+            <h2>Growing Spinners</h2>
+            <p>Use the <code>.spinner-grow</code> class if you want the spinner/loader to grow instead of "spin":</p>
+    
+            <div class="spinner-grow spinner-grow-sm  text-muted"></div>
+            <div class="spinner-grow text-primary"></div>
+            <div class="spinner-grow text-success"></div>
+            <div class="spinner-grow text-info"></div>
+            <div class="spinner-grow text-warning"></div>
+            <div class="spinner-grow text-danger"></div>
+            <div class="spinner-grow text-secondary"></div>
+            <div class="spinner-grow text-dark"></div>
+            <div class="spinner-grow text-light"></div>
+            <div class="spinner-grow text-danger"></div>
+        </div>
+        <hr>
+
+
+        <div class="a">
+            <h2>Spinner Buttons</h2>
+            <p>Add spinners to buttons:</p>
+            <button class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span> Loading
+            </button>
+            <button class="btn btn-primary" disabled>
+            <span class="spinner-border spinner-border-sm"></span>Loading..</button>
+            <button class="btn btn-primary" disabled>
+            <span class="spinner-grow spinner-grow-sm"></span> Loading..</button>
+        </div>
+        <hr>
+
+
+        <div class="a">
+            <h2>Pagination</h2>
+            <p>To create a basic pagination, add the .pagination class to an ul element. Then add the .page-item to each li element and a .page-link class to each link inside li:</p>   
+            <ul class="pagination pagination-md">
+                <li class="page-item disabled"><a href="" class="page-link">previous</a></li>
+                <li class="page-item"><a href="" class="page-link">1</a></li>
+                <li class="page-item active"><a href="" class="page-link">2</a></li>
+                <li class="page-item"><a href="" class="page-link">3</a></li>
+                <li class="page-item"><a href="" class="page-link">Next</a></li>
+            </ul>
+        </div>
+        <hr>
+
+
+        <div class="a">
+            <h2>Breadcrumbs</h2>
+            <p>The .breadcrumb class indicates the current page's location within a navigational hierarchy:</p>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="">photos</a></li>
+                <li class="breadcrumb-item"><a href="">summer2020</a></li>
+                <li class="breadcrumb-item"><a href="">Italy</a></li>
+                <li class="breadcrumb-item"><a href="">hakau</a></li>
+            </ul>
+        </div>
+        <hr>
+
+
+        <div class="a">
+            <h2>Bootstrap 4 List Groups</h2>
+            <ul class="list-group">
+                  <li class="list-group-item active">first item</li>
+                  <li class="list-group-item">second item</li>
+                  <li class="list-group-item">third item</li>
+            </ul>
+        </div>
+        <hr>
+
+
+        <div class="a">
+            <h2>List Group with Badges</h2>
+            <div class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center"> Inbox<span class="badge badge-primary badge-pill">43</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center"> Draft<span class="badge badge-primary badge-pill">23</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center"> Ads<span class="badge badge-primary badge-pill">34</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center"> Junk<span class="badge badge-primary badge-pill">67</span></li>
+            </div>
+        </div>
+        <hr>
+
+
+        <div class="a">
+            <h2>Collapse</h2>
+            <button class="btn btn-primary" data-toggle="collapse" data-target="#demo">Click to expand</button>
+            <div id="demo" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quaerat ullam assumenda natus corrupti cum exercitationem incidunt, minus provident harum?</div>
+        </div>
+        
+</body>
+</html>
+
